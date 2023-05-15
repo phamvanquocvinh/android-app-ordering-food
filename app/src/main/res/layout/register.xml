@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background2"
+    android:scaleType="centerCrop"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".LoginActivity">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ĐĂNG KÝ"
+                android:textColor="#007BFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <EditText
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:backgroundTint="#007BFF"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+            <EditText
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:backgroundTint="#007BFF"
+                android:ems="10"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:id="@+id/edtConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:ems="10"
+                android:textSize="18sp"
+                android:hint="Xác nhận lại mật khẩu"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:id="@+id/edtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="18sp"
+                android:backgroundTint="#007BFF"
+                android:inputType="textPersonName"
+                android:hint="Họ và tên" />
+
+            <EditText
+                android:drawableLeft="@drawable/baseline_local_phone_24"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="18sp"
+                android:backgroundTint="#007BFF"
+                android:hint="Số điện thoại"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:backgroundTint="#007BFF"
+                android:ems="10"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:hint="Địa chỉ"
+                android:inputType="textPersonName"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_orange"
+            android:text="Đăng ký" />
+    </LinearLayout>
+</ScrollView>

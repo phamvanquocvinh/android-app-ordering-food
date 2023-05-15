@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserActivity.CartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:src="@drawable/default_user_avatar"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvUserFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:text="username" />
+
+            <ImageButton
+                android:id="@+id/btnEditProfile"
+                android:layout_width="wrap_content"
+                android:padding="0px"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_weight="0"
+                android:src="@drawable/baseline_edit_note_24" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#007BFF"
+            android:ems="10"
+            android:drawableLeft="@drawable/baseline_local_phone_24"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:text="phone" />
+
+        <TextView
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:id="@+id/tvEmail"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:backgroundTint="#007BFF"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#007BFF"
+            android:ems="10"
+            android:drawableLeft="@drawable/baseline_location_on_24"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:text="Address"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOderHistory"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_primary"
+            android:layout_weight="0"
+            android:text="lịch sử đặt hàng" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+
+            android:gravity="bottom"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_orange"
+                android:text="đăng xuất" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
